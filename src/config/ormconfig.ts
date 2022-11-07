@@ -1,8 +1,12 @@
 import { DataSourceOptions } from 'typeorm';
 
 export const config: DataSourceOptions = {
-  type: 'sqlite',
-  database: '.db/sql',
-  synchronize: true, // Obs: use synchronize: true only in development mode.
+  type: 'mysql',
+  host: 'localhost',
+  port: 3306,
+  username: 'user',
+  password: 'password',
+  database: 'crud',
+  synchronize: true,
   entities: ['dist/**/*.entity{.ts,.js}'],
 };
