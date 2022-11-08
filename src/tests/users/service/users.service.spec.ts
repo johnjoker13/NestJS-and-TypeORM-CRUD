@@ -1,9 +1,9 @@
-import { UsersService } from './users.service';
-import { User } from '../entities/user.entity';
+import { UsersService } from '../../../users/services/users.service';
+import { User } from '../../../users/entities/user.entity';
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { USER, USERDELETED, USERS, USERUPDATED } from '../../utils/mocks';
+import { USER, USERDELETED, USERS, USERUPDATED } from '../../../utils/mocks';
 
 describe('UsersService', () => {
   let usersService: UsersService;
