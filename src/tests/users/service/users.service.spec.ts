@@ -5,7 +5,7 @@ import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { USER, USERDELETED, USERS, USERUPDATED } from '../../../utils/mocks';
 
-describe('UsersService', () => {
+describe('UsersService Unit Tests', () => {
   let usersService: UsersService;
   let userRepository: Repository<User>;
 
